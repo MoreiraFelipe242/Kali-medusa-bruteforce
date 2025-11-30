@@ -17,16 +17,12 @@ Estrutura do Repositório
 Você pode navegar pelos diretórios principais através dos links abaixo:
 Wordlists (listas de usuários e senhas utilizadas nos testes)
 https://github.com/SEU_USUARIO/kali-medusa-bruteforce/tree/main/wordlists
-Imagens e Evidências dos testes
-https://github.com/SEU_USUARIO/kali-medusa-bruteforce/tree/main/images
 
 /kali-medusa-bruteforce│
 ├── README.md
 ├── wordlists/
 │   ├── senhas.txt
 │   └── usuarios.txt
-└── images/
-    └── (prints serão adicionados aqui após os testes)
 
 Wordlists Utilizadas
 Arquivo: wordlists/senhas.txt
