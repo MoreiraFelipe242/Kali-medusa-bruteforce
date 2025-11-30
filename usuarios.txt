@@ -1,0 +1,4 @@
+root
+msfadmin
+admin
+user
