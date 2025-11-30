@@ -1,6 +1,6 @@
 Simulação de Ataques de Força Bruta com Medusa no Kali Linux
-Descrição
 
+Descrição
 Este projeto faz parte do desafio da DIO e tem como objetivo simular ataques de força bruta em um ambiente seguro utilizando:
 Kali Linux como máquina atacante
 Metasploitable 2 e DVWA como máquinas vulnerávei
