@@ -1,5 +1,5 @@
-🔐 Simulação de Ataques de Força Bruta com Medusa no Kali Linux
-📌 Descrição
+Simulação de Ataques de Força Bruta com Medusa no Kali Linux
+Descrição
 
 Este projeto faz parte do desafio da DIO e tem como objetivo simular ataques de força bruta em um ambiente seguro utilizando:
 Kali Linux como máquina atacante
@@ -8,8 +8,8 @@ Medusa, Hydra e ferramentas auxiliares para testes
 Ambiente isolado via VirtualBox
 Todos os experimentos foram realizados exclusivamente em ambiente controlado, com finalidade educacional e de auditoria, seguindo boas práticas de Segurança da Informação.
 
-🖥 Ambiente Utilizado
-✔ Máquinas Virtuais
+Ambiente Utilizado
+Máquinas Virtuais
 
 Kali Linux 2024.x
 
@@ -17,17 +17,17 @@ Metasploitable 2
 
 DVWA (Damn Vulnerable Web Application)
 
-✔ VirtualBox
+VirtualBox
 Configurações:
 Rede: Host-Only ou Rede Interna
 As VMs se comunicam entre si, mas não têm acesso à internet, garantindo segurança.
 
-✔ Objetivo do Ambiente
+Objetivo do Ambiente
 Testar ataques de força bruta sem riscos
 Demonstrar vulnerabilidades reais
 Explorar formas de mitigar ataques
 
-📂 Estrutura do Repositório
+Estrutura do Repositório
 /kali-medusa-bruteforce
 │
 ├── README.md
@@ -39,7 +39,7 @@ Explorar formas de mitigar ataques
     ├── dvwa-bruteforce.png
     └── smb-passwordspray.png
 
-📚 Wordlists Utilizadas
+Wordlists Utilizadas
 wordlists/senhas.txt
 123
 1234
@@ -55,8 +55,8 @@ msfadmin
 admin
 user
 
-🚀 Ataques Realizados
-🔵 1. Ataque FTP com Medusa (Força Bruta)
+Ataques Realizados
+1. Ataque FTP com Medusa (Força Bruta)
 ✔ Objetivo
 Testar logins no serviço FTP vulnerável da Metasploitable 2.
 
@@ -68,7 +68,7 @@ medusa -h 192.168.56.101 -u msfadmin -P wordlists/senhas.txt -M ftp
 Identificação de credenciais válidas
 Prints no terminal serão adicionados na pasta /images
 
-🔵 2. Ataque Web (DVWA) – Força Bruta com Hydra
+2. Ataque Web (DVWA) – Força Bruta com Hydra
 ✔ Pré-requisitos
 DVWA configurado em:
 http://192.168.56.102/dvwa
@@ -81,7 +81,7 @@ hydra 192.168.56.102 http-post-form "/dvwa/login.php:username=^USER^&password=^P
 Hydra retorna combinação válida
 Print salvo em /images/dvwa-bruteforce.png
 
-🔵 3. SMB – Password Spraying + Enumeração
+3. SMB – Password Spraying + Enumeração
 ✔ Enumeração de usuários
 enum4linux -a 192.168.56.101 | grep 'user'
 
